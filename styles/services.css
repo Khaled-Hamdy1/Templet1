@@ -1,0 +1,135 @@
+#services {
+  background-image: url("../img/eee.jpeg");
+  background-attachment: fixed;
+}
+/* What We Offer Styles */
+.services__header {
+  background-color: #fff;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+#services .box__title {
+  text-align: start;
+}
+
+.box__title span .icon {
+  font-size: 30px;
+  margin: 0 15px 10px 0px;
+  color: #6195ff;
+}
+
+#services .box__text {
+  text-align: start;
+  margin-left: 45px;
+}
+/* Why Choose Us Styles */
+.services__main {
+  display: flex;
+  background-color: #eee;
+  padding: 120px 10% 80px;
+}
+
+.services__main-container {
+  width: 50%;
+}
+
+.services__main-title {
+  font-size: 35px;
+  margin: 0;
+}
+.services__main-title::after {
+  margin: 10px 0 45px;
+}
+
+.services__main-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  color: #999;
+  line-height: 1.4;
+}
+
+.services__main-list {
+  list-style: none;
+}
+
+.services__main-item {
+  margin-bottom: 13px;
+  color: #999;
+}
+
+.services__main-item::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: #6195ff;
+}
+
+.services__main-image{
+  position: relative;
+}
+
+.service__main-bullets {
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  border-radius: 50%;
+}
+
+.service__main-bullets span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #a8a8a8;
+  margin-left: 10px;
+}
+
+.service__main-bullets .active {
+  background-color: #6195ff;
+}
+/* Statistics Styles */
+.service__footer {
+  height: 350px;
+  position: relative;
+  z-index: 1;
+}
+
+.service__footer-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.service__footer-list {
+  width: 80%;
+  margin: auto;
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.service__footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+.service__footer-number {
+  font-size: 30px;
+}
+
+.icon {
+  color: #6195ff;
+  margin-bottom: 15px;
+}

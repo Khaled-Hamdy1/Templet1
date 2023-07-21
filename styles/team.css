@@ -1,0 +1,91 @@
+#team {
+  background-color: #e8e8e8;
+  padding: 120px 0;
+}
+
+.team__container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.team__member {
+  display: block;
+  float: left;
+  width: 28%;
+  background-color: #d1caca;
+  padding: 17px 13px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin-inline: 1.5%;
+}
+
+.team__member::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.team__member-list{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  list-style: none;
+  visibility: hidden;
+  
+}
+
+.team__member-item {
+  background-color: #6195ff;
+  padding: 10px;
+}
+
+.team__member-img {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+
+.team__member-img img {
+  width: 100%;
+}
+
+.team__member-name {
+  color: #222;
+  padding: 10px 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.team__member-job {
+  color: #999;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
+.team__member:hover .team__member-list{
+  visibility: visible;
+}
+
+.team__member:hover .team__member-name {
+  color: #fff;
+}
+
+.team__member:hover .team__member-job {
+  color: #6195ff;
+}
+
+.team__member:hover::after {
+  height: 100%;
+}

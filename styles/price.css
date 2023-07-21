@@ -1,0 +1,147 @@
+#price {
+  padding-block: 120px;
+  background-color: #e8e8e8;
+}
+
+.price__container {
+  width: 80%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.price__item {
+  width: 30%;
+  padding: 30px 15px;
+  border: 1px solid #a8a8a8;
+  text-align: center;
+  color: #a8a8a8;
+  position: relative;
+  z-index: 2;
+}
+
+.price__item-title {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.price__item-number {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #6195ff;
+  margin: 20px auto;
+  padding: 12px 0px;
+  color: black;
+}
+
+.price__item-number__dollar {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.price__item-number__period {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.price__item-list * {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.price__item-btn {
+  width: 120px;
+  border: 2px solid #6195ff;
+  padding: 4px;
+  display: block;
+  margin: 15px auto;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.price__item-overlay {
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  transition: height 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.price__item:hover .price__item-overlay {
+  height: 100%;
+}
+
+.price__item:hover .price__item-title,
+.price__item:hover .price__item-number {
+  color: red;
+}
+
+/* Testimonials Section */
+
+.testimonial {
+  height: 350px;
+  background-image: url(../img/zzz.png);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.testimonial::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.testimonial__container {
+  display: flex;
+  width: 70%;
+  margin-inline: auto;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.testimonial__item {
+  width: 40%;
+  padding: 30px 15px;
+  color: #fff;
+}
+
+.testimonial__item-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.testimonial__item-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonial__item-job {
+  color: #6195ff;
+}
+
+.testimonial__item-text {
+  line-height: 1.5;
+  margin-left: 10px;
+  font-size: 14px;
+}

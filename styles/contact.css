@@ -1,0 +1,36 @@
+#contact {
+  background-color: #4c4d52;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.contact__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 15px;
+  list-style: none;
+}
+
+.contact__item {
+  color: #fff;
+  padding: 17px;
+  border-radius: 50%;
+  background-color: #6195ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact__item a {
+  color: #fff;
+}
+
+.contact__item:hover {
+  background-color: #0954ec;
+}
+
+.contact__text {
+  color: #999;
+  font-size: 12px;
+  text-transform: uppercase;
+}
